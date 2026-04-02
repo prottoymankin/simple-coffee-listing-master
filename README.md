@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://simple-coffee-listing-master.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -38,7 +38,7 @@
 
 ### What I learned
 
-I have experience in creating reusable and scalable components to maintain clean and efficient code.
+I have experience in creating reusable and scalable components to maintain clean and efficient code. How to use component library daisy ui.
 I can fetch data from APIs and dynamically display it in a structured way.
 Additionally, I use Tailwind CSS to build fully responsive and visually appealing user interfaces.
 
@@ -54,6 +54,7 @@ Additionally, I use Tailwind CSS to build fully responsive and visually appealin
 - CSS Grid
 - [React](https://reactjs.org/)
 - [Tailwind](https://tailwindcss.com/)
+- Daisy UI
 
 ## Features
 
