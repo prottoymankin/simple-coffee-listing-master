@@ -4,6 +4,7 @@ import TabButton from "./TabButton";
 import Products from "./Products";
 import { Suspense, useState } from "react";
 import Available from "./Available";
+import Loader from "./Loader";
 
 const getProductsPromise = async () => {
   const response = await fetch("https://raw.githubusercontent.com/devchallenges-io/curriculum/refs/heads/main/4-frontend-libaries/challenges/group_1/data/simple-coffee-listing-data.json");
@@ -56,7 +57,7 @@ const Page = () => {
 
           {
             activeTab === "All Products" && (
-              <Suspense>
+              <Suspense fallback={<Loader />}>
                 <Products
                   productsPromise = {productsPromise} 
                 />
@@ -66,7 +67,7 @@ const Page = () => {
 
           {
             activeTab === "Available Now" && (
-              <Suspense>
+              <Suspense fallback={<Loader />}>
                 <Available
                   productsPromise = {productsPromise}
                 />
