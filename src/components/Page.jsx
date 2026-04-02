@@ -3,6 +3,7 @@ import vector from "../assets/vector.svg";
 import TabButton from "./TabButton";
 import Products from "./Products";
 import { Suspense, useState } from "react";
+import Available from "./Available";
 
 const getProductsPromise = async () => {
   const response = await fetch("https://raw.githubusercontent.com/devchallenges-io/curriculum/refs/heads/main/4-frontend-libaries/challenges/group_1/data/simple-coffee-listing-data.json");
@@ -53,11 +54,25 @@ const Page = () => {
             />
           </div>
 
-          <Suspense>
-            <Products
-              productsPromise = {productsPromise} 
-            />
-          </Suspense>
+          {
+            activeTab === "All Products" && (
+              <Suspense>
+                <Products
+                  productsPromise = {productsPromise} 
+                />
+              </Suspense>
+            )
+          }
+
+          {
+            activeTab === "Available Now" && (
+              <Suspense>
+                <Available
+                  productsPromise = {productsPromise}
+                />
+              </Suspense>
+            )
+          }
         </div>
       </div>
     </section>

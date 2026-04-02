@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/prottoymankin/simple-coffee-listing-master">
       Solution
     </a>
     <span> | </span>
@@ -69,8 +69,7 @@ Additionally, I use Tailwind CSS to build fully responsive and visually appealin
 
 ## Acknowledgements
 
-- DevChallenges for the project idea  
-- Open source community for resources and inspiration
+- DevChallenges for the project idea
 
 ## Author
 
